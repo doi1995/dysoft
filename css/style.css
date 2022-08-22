@@ -13,19 +13,10 @@
 }
 
 .keyvisual h1 {
-  font-size: 200px;
+  font-size: 40px;
   margin: 20px 0px 20px 10px;
   color: #fff;
-  position: relative;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(20deg, rgba(211, 209, 209, 0.3) 45%, #fff 50%, rgba(211, 209, 209, 0.3) 55%);
-  background-size: 500% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-animation: shine 4s infinite;
-          animation: shine 4s infinite;
+  font-weight: 300;
 }
 
 @-webkit-keyframes shine {
@@ -282,7 +273,7 @@ header {
   position: fixed;
   width: 100%; /*追加*/
   z-index: 100000;
-  background-color: #383838;
+  background-color: #135c2b;
 }
 
 .header_nav {
@@ -311,7 +302,7 @@ ol {
 }
 
 footer {
-  background-color: #383838;
+  background-color: #135c2b;
   padding: 10px;
   text-align: center;
   color: white;
@@ -351,7 +342,7 @@ h2 {
 }
 
 section {
-  max-width: 1080px;
+  max-width: 1180px;
   margin: 50px auto;
 }
 
@@ -359,6 +350,7 @@ section {
 .news_con {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* news flexbox 子要素 */
@@ -418,13 +410,11 @@ img {
   .store_con {
     flex-wrap: wrap;
   }
-}
-@media (max-width: 320px) {
   .news_con {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .news_box {
-    margin-bottom: 5px;
+  .container {
+    margin-bottom: 10px;
   }
 }
 .portfolio-experiment a {
@@ -534,8 +524,8 @@ img {
 .front_2,
 .front_3,
 .back {
-  width: 340px;
-  height: 300px;
+  width: 380px;
+  height: 320px;
 }
 
 .container,
@@ -568,13 +558,13 @@ img {
 }
 
 .front_2 {
-  background-image: url("../image/news_2.jpg");
+  background-image: url("../image/banner_2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .front_3 {
-  background-image: url("../image/news_1.jpg");
+  background-image: url("../image/banner_3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -684,4 +674,14 @@ img {
 
 .s_arrow_rotate {
   transform: rotate(-180deg);
+}
+
+.logo {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
